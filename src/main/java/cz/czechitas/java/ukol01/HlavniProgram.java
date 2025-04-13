@@ -69,7 +69,7 @@ public class HlavniProgram {
 
 
     public void nakresliSlunicko() {
-        int pocetPaprsku = 15;
+        double pocetPaprsku = 15;
         zofka.penDown();
         for (int i = 0; i < pocetPaprsku; i++) {
             zofka.turnRight(360 / pocetPaprsku);
@@ -146,8 +146,8 @@ public class HlavniProgram {
     }
 
     int mezeraMeziPismeny = 30;
-    int vyskaPismena = 90;
-    int sirkaPismena = 70;
+    double vyskaPismena = 90;
+    double sirkaPismena = 70;
 
     public void nakresliT() {
         zofka.penDown();
@@ -186,8 +186,8 @@ public class HlavniProgram {
         zofka.penUp();
     }
 
-    int otocka = 9;
-    int delkaKroku = 9;
+    double otocka = 9;
+    double delkaKroku = 9;
 
     public void nakresliR() {
         zofka.penDown();
@@ -234,10 +234,7 @@ public class HlavniProgram {
         zofka.move(99);
         zofka.turnRight(180);
         zofka.move(99);
-        zofka.turnLeft(22);
-        //vychozi pozice
-        zofka.turnRight(180);
-        zofka.turnLeft(22);
+        zofka.turnRight(180 - 44);
         zofka.move(99);
         zofka.turnRight(180);
         zofka.move(vyskaPismena / 2);
